@@ -1,0 +1,198 @@
+/* ===================================================================
+   LUMINA NAILS & CO. - LUXURY NAIL ART STUDIO STYLES
+   Palette: Blush, Soft Nude, Pearl Cream, Rose Gold, Warm Charcoal
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-cream: #FAF7F2;
+  --color-cream-card: #FFFDFB;
+  --color-blush: #F9EBEA;
+  --color-blush-deep: #E8B4B8;
+  --color-nude: #EFE7DE;
+  --color-nude-dark: #D8C7B5;
+  --color-gold: #C5A059;
+  --color-gold-light: #E7D3A4;
+  --color-rosegold: #B76E79;
+  --color-rosegold-light: #EBBABF;
+  --color-charcoal: #2A2421;
+  --color-muted: #6E625D;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8B4B8;
+  border-radius: 999px;
+  border: 2px solid #FAF7F2;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B76E79;
+}
+
+/* Smooth HTML Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--color-charcoal);
+  background-color: var(--color-cream);
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Metallic & Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #A87938 0%, #D4AF37 50%, #B76E79 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rosegold-gradient {
+  background: linear-gradient(135deg, #B76E79 0%, #E8B4B8 60%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #D4AF37 50%, #B76E79 100%);
+}
+
+.bg-rosegold-gradient {
+  background: linear-gradient(135deg, #B76E79 0%, #D89585 100%);
+}
+
+.bg-blush-gradient {
+  background: linear-gradient(180deg, #FFFDFB 0%, #FAF7F2 60%, #F9EBEA 100%);
+}
+
+.bg-hero-mesh {
+  background-color: #FAF7F2;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(249, 235, 234, 0.8) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(235, 186, 191, 0.4) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(247, 235, 232, 0.9) 0px, transparent 50%),
+    radial-gradient(at 20% 90%, rgba(239, 231, 222, 0.7) 0px, transparent 50%);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.glass-panel-gold {
+  background: rgba(255, 253, 249, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.22);
+}
+
+/* Elegant Box Shadows */
+.shadow-blush {
+  box-shadow: 0 10px 30px -5px rgba(232, 180, 184, 0.35);
+}
+
+.shadow-luxury {
+  box-shadow: 0 15px 35px -5px rgba(183, 110, 121, 0.15), 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.shadow-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(183, 110, 121, 0.22), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatReverse 7s ease-in-out 1.5s infinite;
+}
+
+.animate-whatsapp-pulse {
+  animation: pulseGlow 2.5s infinite;
+}
+
+.shimmer-badge {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Gallery Item Transitions */
+.gallery-card {
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.gallery-card img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Luxury border accent */
+.luxury-border-decor::before,
+.luxury-border-decor::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: #C5A059;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+

@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Niwi Nails | Luxury Aesthetic Nail Art Studio</title>
+  <meta name="description" content="Studio nail art estetik & elegan oleh Niwi di Brandan Barat. Produk gel premium Korea & Jepang, serta standar higienitas sterilisasi medis. Book via WhatsApp." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: {
+              50: '#FDF8F7',
+              100: '#F9EBEA',
+              200: '#F4DCD9',
+              300: '#E8B4B8',
+              400: '#D89585',
+              500: '#B76E79',
+              600: '#9B5560',
+            },
+            nude: {
+              50: '#FAF8F5',
+              100: '#F5EFE6',
+              200: '#EFE7DE',
+              300: '#DFD3C3',
+              400: '#C7B198',
+            },
+            champagne: {
+              300: '#E7D3A4',
+              400: '#D4AF37',
+              500: '#C5A059',
+              600: '#A87938',
+            },
+            pearl: '#FAF7F2',
+            espresso: '#2A2421',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            editorial: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-[#FAF7F2] text-espresso font-sans antialiased selection:bg-blush-300 selection:text-espresso">
+
+  <!-- =========================================================================
+       1. TOP PROMO BANNER (INTERACTIVE WITH CLICK-TO-COPY CODE)
+       ========================================================================= -->
+  <aside class="bg-gradient-to-r from-stone-900 via-espresso to-stone-900 text-[#FAF7F2] text-xs py-2.5 px-4 text-center relative z-50 border-b border-rose-200/20" aria-label="Pengumuman Promo">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 font-light tracking-wide text-rose-200">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-champagne-400"></i>
+        <span>Special First Visit Offer: <strong>Diskon 20% + Free Organic Cuticle Oil Treatment</strong></span>
+      </span>
+      <button id="promo-copy-badge" data-code="NIWI20" class="ml-2 px-2.5 py-0.5 rounded-full bg-champagne-500/20 text-champagne-300 border border-champagne-400/40 text-[11px] font-semibold tracking-wider hover:bg-champagne-500/40 transition-colors inline-flex items-center gap-1 cursor-pointer" title="Klik untuk salin kode voucher">
+        <span>KODE: <strong>NIWI20</strong></span>
+        <i data-lucide="copy" class="w-3 h-3"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. STICKY HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header id="main-nav" class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-nude-200/60 transition-all duration-300 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blush-200 via-nude-100 to-champagne-300 flex items-center justify-center shadow-inner border border-white group-hover:scale-105 transition-transform">
+          <i data-lucide="sparkles" class="w-5 h-5 text-blush-500"></i>
+        </div>
+        <div>
+          <span class="block font-serif text-xl sm:text-2xl font-bold tracking-tight text-espresso group-hover:text-blush-600 transition-colors">
+            NIWI
+          </span>
+          <span class="block text-[10px] tracking-[0.28em] uppercase text-stone-500 font-medium -mt-1">
+            Nails & Atelier
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-700">
+        <a href="#about" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">Tentang Kami</a>
+        <a href="#services" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">Menu & Harga</a>
+        <a href="#simulator" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all flex items-center gap-1.5">
+          <span>Virtual Studio</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-blush-500 animate-pulse"></span>
+        </a>
+        <a href="#gallery" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">Galeri Karya</a>
+        <a href="#testimonials" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">Testimoni</a>
+        <a href="#faq" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">FAQ</a>
+        <a href="#contact" class="hover:text-blush-500 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blush-400 hover:after:w-full after:transition-all">Lokasi</a>
+      </nav>
+
+      <!-- Desktop CTA Action -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button class="open-booking-modal-btn px-5 py-2.5 rounded-full bg-gradient-to-r from-espresso via-stone-800 to-espresso text-[#FAF7F2] text-xs font-semibold tracking-wider uppercase hover:shadow-lg hover:shadow-stone-900/15 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2 border border-stone-700">
+          <i data-lucide="calendar" class="w-4 h-4 text-champagne-300"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-espresso hover:text-blush-500 focus:outline-none" aria-label="Buka Menu Navigasi">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MOBILE DRAWER MENU
+       ========================================================================= -->
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 w-[82%] max-w-sm h-full bg-[#FAF7F2] z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-out border-l border-nude-200" aria-label="Menu Mobile">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-nude-200">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-blush-200 flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-4 h-4 text-blush-500"></i>
+          </div>
+          <span class="font-serif text-lg font-bold tracking-tight">NIWI NAILS</span>
+        </div>
+        <button id="mobile-drawer-close" class="p-2 text-stone-500 hover:text-espresso" aria-label="Tutup Menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 py-8 text-base font-medium text-stone-700">
+        <a href="#about" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>Tentang Kami</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+        <a href="#services" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>Menu Layanan & Harga</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+        <a href="#simulator" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between font-semibold text-blush-600">
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Virtual Studio (Simulator)</span>
+          </span>
+          <span class="px-2 py-0.5 rounded-full bg-blush-100 text-[10px] font-bold text-blush-600">NEW</span>
+        </a>
+        <a href="#gallery" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>Galeri Portofolio</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+        <a href="#testimonials" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>Ulasan Pelanggan</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+        <a href="#faq" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>FAQ Pertanyaan</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+        <a href="#contact" class="mobile-nav-link hover:text-blush-500 py-1 flex items-center justify-between">
+          <span>Lokasi & Kontak</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-stone-400"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-nude-200">
+      <button class="open-booking-modal-btn w-full py-3 rounded-full bg-espresso text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md">
+        <i data-lucide="calendar" class="w-4 h-4 text-champagne-300"></i>
+        <span>Reservasi Jadwal Sekarang</span>
+      </button>
+      <a href="https://wa.me/6285772028609?text=Halo%20Niwi%2C%20saya%20ingin%20tanya%20jadwal%20dan%20pricelist%20nail%20art." target="_blank" class="w-full py-3 rounded-full bg-emerald-600 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Chat WhatsApp Langsung</span>
+      </a>
+      <div class="text-center text-xs text-stone-500 pt-2">
+        Senin - Minggu: 10:00 - 20:00 WIB &bull; Brandan Barat
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       3. HERO SECTION (AESTHETIC, MINIMALIST & ELEGAN)
+       ========================================================================= -->
+  <section id="hero" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-hero-mesh">
+    <!-- Subtle Background Glows -->
+    <div class="absolute top-1/4 -left-20 w-80 h-80 rounded-full bg-blush-200/40 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-champagne-300/30 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left: Catchy Headline & Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Category Pill -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-blush-300/60 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-blush-500 animate-pulse"></span>
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-blush-600">
+              HAUTE ATELIER & NAIL SANCTUARY
+            </span>
+          </div>
+
+          <!-- Catchy Headline -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] text-espresso tracking-tight">
+            Sentuhan Seni & Kemewahan di Setiap <span class="text-rosegold-gradient italic font-editorial">Ujung Jemari Anda</span>.
+          </h1>
+
+          <!-- Subtitle / Value Proposition -->
+          <p class="text-base sm:text-lg text-stone-600 font-light leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Jadikan kuku Anda kanvas keanggunan sejati. Manjakan diri dengan perawatan manicure higienis standar medis, formula gel vegan non-toxic dari Korea & Jepang, serta desain nail art kustom yang tahan hingga 5 minggu.
+          </p>
+
+          <!-- Dual Call to Action Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/6285772028609?text=Halo%20Niwi%2C%20saya%20ingin%20reservasi%20appointment%20nail%20art.%20Mohon%20info%20slot%20jadwal%20tersedia." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-espresso via-stone-800 to-espresso text-[#FAF7F2] font-semibold text-sm tracking-wide shadow-xl shadow-stone-900/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3 group border border-stone-700">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform"></i>
+              <span>Book Your Appointment</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-champagne-300 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <a href="#services" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/80 hover:bg-white text-stone-800 font-semibold text-sm tracking-wide border border-nude-300 shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2">
+              <i data-lucide="sparkle" class="w-4 h-4 text-champagne-500"></i>
+              <span>Lihat Menu & Harga</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Micro Badge -->
+          <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-stone-600">
+            <div class="flex -space-x-2">
+              <img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Customer avatar" />
+              <img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Customer avatar" />
+              <img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Customer avatar" />
+              <div class="w-8 h-8 rounded-full bg-blush-200 border-2 border-white flex items-center justify-center text-[10px] font-bold text-blush-600">+1.2k</div>
+            </div>
+            <div>
+              <div class="flex items-center text-amber-500">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                <span class="font-bold text-stone-900 ml-1.5 text-xs">4.9 / 5.0</span>
+              </div>
+              <p class="text-[11px] text-stone-500">Disukai oleh 1.450+ pelanggan setia di Brandan Barat</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Aesthetic Nail Photography Showcase & Floating Cards -->
+        <div class="lg:col-span-5 relative">
+          
+          <!-- Main Hero Image Frame -->
+          <div class="relative mx-auto max-w-sm sm:max-w-md">
+            <!-- Decorative Back Border -->
+            <div class="absolute -inset-3 rounded-[2.5rem] bg-gradient-to-tr from-blush-300 via-nude-200 to-champagne-300 opacity-60 blur-lg"></div>
+
+            <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-stone-100">
+              <img 
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80" 
+                alt="Manicure & Nail Art Mewah Elegan Niwi Nails" 
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" 
+              />
+              
+              <!-- Subtle gradient vignette -->
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/40 via-transparent to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 right-4 text-white text-xs p-3 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-between">
+                <div>
+                  <span class="block font-semibold">Signature Glazed Donut & French 3D</span>
+                  <span class="text-[10px] text-stone-200">Koleksi Desain Terpopuler Musim Ini</span>
+                </div>
+                <span class="px-2 py-1 rounded bg-white text-stone-900 font-bold text-[10px]">NEW</span>
+              </div>
+            </div>
+
+            <!-- Floating Glass Card 1: Hygiene Guarantee -->
+            <div class="absolute -top-6 -left-6 sm:-left-8 glass-panel p-3.5 rounded-2xl shadow-luxury max-w-[190px] border border-white/80 animate-float hidden sm:block">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-bold text-stone-900 leading-tight">100% Medical Grade</span>
+                  <span class="block text-[10px] text-stone-500">Autoclave Sterilized</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Glass Card 2: Durability -->
+            <div class="absolute -bottom-6 -right-6 sm:-right-8 glass-panel p-3.5 rounded-2xl shadow-luxury max-w-[210px] border border-white/80 animate-float-delayed">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-blush-100 text-blush-500 flex items-center justify-center shrink-0">
+                  <i data-lucide="gem" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-bold text-stone-900 leading-tight">4-5 Minggu Tahan</span>
+                  <span class="block text-[10px] text-stone-500">Anti-peeling & Chip Free</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. VALUE PILLARS & TRUST BADGES BAR
+       ========================================================================= -->
+  <section class="border-y border-nude-200 bg-white/60 py-8 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+        
+        <div class="flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-blush-100/70 text-blush-500 flex items-center justify-center shrink-0">
+            <i data-lucide="sparkles" class="w-5 h-5 text-blush-500"></i>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-espresso">Korean & Japanese Gel</h4>
+            <p class="text-[11px] text-stone-500 mt-0.5">Non-toxic, ramah kuku, tanpa bau tajam menyengat.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-champagne-300/30 text-champagne-600 flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-espresso">Sterilisasi Autoclave</h4>
+            <p class="text-[11px] text-stone-500 mt-0.5">Alat disterilkan secara medis & 1x pakai untuk kikir kuku.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-nude-200/80 text-stone-700 flex items-center justify-center shrink-0">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-espresso">Certified Nail Artists</h4>
+            <p class="text-[11px] text-stone-500 mt-0.5">Terapis profesional bersertifikat dengan jam terbang tinggi.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+            <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-xs sm:text-sm font-bold text-espresso">Garansi Retouch 7 Hari</h4>
+            <p class="text-[11px] text-stone-500 mt-0.5">Free perbaikan jika gel copot atau rusak tanpa sengaja.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. ABOUT US SECTION (CERITA STUDIO & HIGIENITAS)
+       ========================================================================= -->
+  <section id="about" class="py-20 lg:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Images Composition (Studio & Nail Care) -->
+        <div class="lg:col-span-6 relative order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4 sm:gap-6">
+            
+            <div class="space-y-4 sm:space-y-6">
+              <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-white aspect-[3/4] relative group">
+                <img 
+                  src="images/niwi-studio-workstation.jpg" 
+                  alt="Workstation Nail Art Studio Niwi dengan Rak Kutek Estetik" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div class="absolute bottom-2 left-2 right-2 px-2.5 py-1.5 rounded-xl bg-stone-900/70 backdrop-blur-md text-white text-[10px] font-medium flex items-center justify-between">
+                  <span>Workstation Studio</span>
+                  <span class="text-amber-300 font-bold">Hygiene Area</span>
+                </div>
+              </div>
+              <div class="p-5 rounded-2xl bg-white border border-nude-200 shadow-sm text-center">
+                <span class="block font-serif text-3xl font-bold text-blush-500">100%</span>
+                <span class="block text-xs font-medium text-stone-600 mt-1">Single-Use Hygiene Kit</span>
+                <p class="text-[10px] text-stone-400 mt-0.5">Buffer & file kikir sekali pakai langsung dibawa pulang pelanggan</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 sm:space-y-6 pt-8">
+              <div class="p-5 rounded-2xl bg-gradient-to-br from-espresso to-stone-800 text-white shadow-lg">
+                <i data-lucide="heart" class="w-6 h-6 text-blush-300 mb-2"></i>
+                <span class="block font-serif text-2xl font-bold text-champagne-300">5+ Tahun</span>
+                <span class="block text-xs text-stone-300 mt-0.5">Mendedikasikan presisi seni kuku di Brandan Barat</span>
+              </div>
+              <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-white aspect-[3/4] relative group">
+                <img 
+                  src="images/niwi-studio-lounge.jpg" 
+                  alt="Lounge Ruang Tunggu Nyaman & Estetik Studio Niwi" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div class="absolute bottom-2 left-2 right-2 px-2.5 py-1.5 rounded-xl bg-stone-900/70 backdrop-blur-md text-white text-[10px] font-medium flex items-center justify-between">
+                  <span>Comfort Lounge</span>
+                  <span class="text-rose-200 font-bold">Cozy Area</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Decorative Floral Sparkle Badge -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-white/95 backdrop-blur-md shadow-2xl border border-champagne-300 flex flex-col items-center justify-center p-2 text-center pointer-events-none">
+            <i data-lucide="sparkles" class="w-6 h-6 text-champagne-500"></i>
+            <span class="text-[9px] font-bold tracking-widest uppercase text-stone-700 mt-0.5">NIWI</span>
+          </div>
+        </div>
+
+        <!-- Story & Philosophy Copy -->
+        <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+          
+          <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+            <span class="w-8 h-[1px] bg-blush-400"></span>
+            <span>TENTANG NIWI NAIL STUDIO</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso leading-tight">
+            Kuku Bukan Sekadar Riasan, Melainkan <span class="text-rosegold-gradient italic font-editorial">Bentuk Cinta Pada Diri Sendiri</span>.
+          </h2>
+
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            Didirikan oleh <strong>Niwi</strong> di Brandan Barat, kami menghadirkan ruang kecantikan kuku pribadi yang tenang, bersih, dan berestetika tinggi. Setiap detail studio kami rancang agar Anda merasa rileks layaknya di ruang peristirahatan pribadi.
+          </p>
+
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            Kami menolak kompromi dalam hal keselamatan dan kesehatan kuku alami Anda. Setiap kuas, cairan kutikula, dan gel yang kami gunakan telah teruji klinis vegan, bebas dari bahan kimia berbahaya (10-Free formula), dan tidak membuat kuku alami menipis atau rapuh.
+          </p>
+
+          <!-- 3 Key Commitments -->
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-blush-200/80 text-blush-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-espresso">Autoclave Hospital-Grade Sterilization</h4>
+                <p class="text-xs text-stone-500">Setiap alat stainless steel melalui pembersihan ultrasonik dan disterilkan menggunakan uap panas autoclave bertekanan medis.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-blush-200/80 text-blush-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-espresso">Premium Korean & Japanese Formulations</h4>
+                <p class="text-xs text-stone-500">Pigmen warna intens, kilau kristal kaca (glass-shine), serta elastisitas tinggi yang melindungi kuku asli tanpa rasa panas saat di-cure.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-blush-200/80 text-blush-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-espresso">Complimentary Artisan Refreshment</h4>
+                <p class="text-xs text-stone-500">Nikmati racikan teh hangat aromatik serta alunan musik santai selama pengerjaan kuku Anda.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-6">
+            <button class="open-booking-modal-btn px-6 py-3 rounded-full bg-blush-500 text-white text-xs font-semibold uppercase tracking-wider hover:bg-blush-600 transition-colors shadow-md shadow-blush-500/20">
+              Jadwalkan Kunjungan Anda
+            </button>
+            <div class="border-l border-nude-300 pl-4 py-1">
+              <span class="block text-xs font-bold text-stone-900">Niwi</span>
+              <span class="block text-[11px] text-stone-500">Founder & Master Nail Artist</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SERVICES & PRICING MENU (MENU LAYANAN & HARGA LENGKAP)
+       ========================================================================= -->
+  <section id="services" class="py-20 lg:py-28 bg-[#FAF5F0] border-t border-nude-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+          <span>MENU & DAFTAR HARGA</span>
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso">
+          Perawatan Eksklusif Untuk <span class="text-rosegold-gradient italic font-editorial">Kuku Sempurna</span>
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base font-light">
+          Transparansi harga tanpa biaya tersembunyi. Setiap layanan sudah termasuk pembersihan kutikula standar Russian Manicure dan minyak vitamin organik.
+        </p>
+      </div>
+
+      <!-- Services Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1: Gel Polish -->
+        <div class="rounded-3xl bg-white p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-nude-200 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-blush-100 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform"></div>
+          
+          <div class="relative z-10 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-blush-100 text-blush-600 text-[11px] font-semibold tracking-wide">
+                Best Seller
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>45 - 60 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Korean Gel Polish
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Aplikasi warna gel murni dengan kilau tinggi dan pilihan 250+ warna pastel kekinian.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Mulai dari</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 149.000 <span class="text-xs font-sans font-normal text-stone-500">/ 10 jari</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Deep Cuticle Care & Russian Manicure Prep</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>2-3 Lapis Gel Polish Formula Bebas Racun</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Diamond Top Coat Anti-Gores & Kilau Tahan 4 Minggu</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Relaksasi Pijat Jari dengan Rosehip Cuticle Oil</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 relative z-10">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-nude-100 hover:bg-espresso hover:text-[#FAF7F2] text-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+              data-service-name="Korean Gel Polish (Rp 149.000)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 2: Nail Extensions -->
+        <div class="rounded-3xl bg-white p-7 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-blush-300 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-0.5 rounded-full bg-gradient-to-r from-blush-500 to-espresso text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+            Favorit Pelanggan
+          </div>
+
+          <div class="relative z-10 space-y-4 pt-2">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-champagne-300/30 text-champagne-600 text-[11px] font-semibold tracking-wide">
+                Soft Gel / Polygel
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>90 - 120 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Nail Extension Pro
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Sambung kuku ringan, alami, dan kuat menggunakan Soft Gel Tips atau Polygel tanpa merusak kuku asli.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Mulai dari</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 285.000 <span class="text-xs font-sans font-normal text-stone-500">/ 10 jari</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Free Pilihan Bentuk: Almond, Coffin, Oval, Square</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Formula Ringan & Sangat Nyaman Seperti Kuku Asli</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Sudah Termasuk Base Polish 1 Warna Pilihan</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Ketahanan Ekstra Hingga 5-6 Minggu</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 relative z-10">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-espresso text-[#FAF7F2] hover:bg-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-sm"
+              data-service-name="Nail Extension Pro (Rp 285.000)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 3: Custom Nail Art -->
+        <div class="rounded-3xl bg-white p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-nude-200 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-champagne-300/20 rounded-bl-full -z-0 opacity-50 group-hover:scale-110 transition-transform"></div>
+
+          <div class="relative z-10 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-[11px] font-semibold tracking-wide">
+                Artisan Design
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>60 - 90 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Custom Nail Art Design
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Bebas bawa referensi Pinterest/Instagram Anda: Chrome glaze, 3D gem, blush aura, atau french line.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Mulai dari</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 75.000 - 180.000 <span class="text-xs font-sans font-normal text-stone-500">/ add-on</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Tier 1: Minimalist Chrome, French Tip, Cat Eye</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Tier 2: Korean Blush Gradient, Marble, Foil Gold</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Tier 3: 3D Emboss Gel, Swarovski Charms, Hand-painted</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Konsultasi Warna & Desain Gratis dengan Nail Artist</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 relative z-10">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-nude-100 hover:bg-espresso hover:text-[#FAF7F2] text-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+              data-service-name="Custom Nail Art Design (Add-on)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 4: Russian Mani & Pedi -->
+        <div class="rounded-3xl bg-white p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-nude-200 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-stone-100 text-stone-700 text-[11px] font-semibold tracking-wide">
+                Pembersihan Total
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>45 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Luxury Russian Manicure
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Teknik dry-manicure khas Rusia untuk pembersihan kutikula paling rapi dan mendalam tanpa rasa sakit.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Harga</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 120.000 <span class="text-xs font-sans font-normal text-stone-500">/ treatment</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Teknik E-File Elektrik Presisi Medis</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Kutikula Bersih Sempurna & Tumbuh Lebih Lambat</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Pengilapan Kuku Alami (Natural High-Shine Buff)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-nude-100 hover:bg-espresso hover:text-[#FAF7F2] text-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+              data-service-name="Luxury Russian Manicure (Rp 120.000)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 5: Bridal & Special Occasion -->
+        <div class="rounded-3xl bg-white p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-nude-200 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-[11px] font-semibold tracking-wide">
+                Special Occasion
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>120 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Royal Bridal Nail Package
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Paket pengantin lengkap: Extension soft gel, nail art kristal Swarovski, dan hand spa parafin aromaterapi.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Paket Lengkap</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 480.000 <span class="text-xs font-sans font-normal text-stone-500">/ paket</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Full Soft Gel Extension & Custom Bridal Art</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Ornamen Pearl Beads & Authentic Swarovski Crystal</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Warm Peach Paraffin Wax Mask untuk Kulit Tangan Lembut</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-nude-100 hover:bg-espresso hover:text-[#FAF7F2] text-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+              data-service-name="Royal Bridal Nail Package (Rp 480.000)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 6: Pedicure & Spa -->
+        <div class="rounded-3xl bg-white p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-nude-200 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-semibold tracking-wide">
+                Relaxing Spa
+              </span>
+              <div class="flex items-center gap-1 text-stone-500 text-xs">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>75 Menit</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso group-hover:text-blush-600 transition-colors">
+                Rose Petal Pedicure Spa
+              </h3>
+              <p class="text-xs text-stone-500 mt-1">Rendaman air mawar aromatik, scrubbing garam laut mati Himalaya, pembersihan tumit pecah-pecah & gel kaki.</p>
+            </div>
+
+            <div class="pt-2">
+              <span class="text-xs text-stone-400">Harga</span>
+              <div class="text-2xl font-serif font-bold text-espresso">
+                Rp 210.000 <span class="text-xs font-sans font-normal text-stone-500">/ sesi</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 pt-4 border-t border-nude-100 text-xs text-stone-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Soothing Foot Soak with Fresh Rose Petals</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Callus Smoothing & Dead Skin Exfoliation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+                <span>Korean Gel Color untuk Kuku Kaki Berkilau</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <button 
+              class="select-service-btn w-full py-3 rounded-full bg-nude-100 hover:bg-espresso hover:text-[#FAF7F2] text-stone-800 text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+              data-service-name="Rose Petal Pedicure Spa (Rp 210.000)"
+            >
+              <span>Pilih Layanan Ini</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Add-ons & Removal Notice -->
+      <div class="mt-12 p-6 rounded-2xl bg-white/70 border border-nude-300 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-champagne-300/30 flex items-center justify-center text-champagne-600 shrink-0">
+            <i data-lucide="info" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-espresso">Perlu Hapus Gel Lama (Nail Removal)?</h4>
+            <p class="text-xs text-stone-500">Free removal gel untuk pemasangan kembali (re-apply) di Niwi Nails. Removal dari salon lain hanya Rp 35.000.</p>
+          </div>
+        </div>
+        <button class="open-booking-modal-btn px-6 py-2.5 rounded-full bg-stone-900 text-white text-xs font-semibold uppercase tracking-wider shrink-0 hover:bg-blush-500 transition-colors">
+          Konsultasi via WA
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. GALLERY / PORTFOLIO SHOWCASE (DENGAN KATEGORI FILTER & LIGHTBOX)
+       ========================================================================= -->
+  <section id="gallery" class="py-20 lg:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+          <span>PORTFOLIO SHOWCASE</span>
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso">
+          Koleksi Mahakarya <span class="text-rosegold-gradient italic font-editorial">Studio Kami</span>
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base font-light">
+          Jelajahi berbagai inspirasi gaya kuku karya nail artist Niwi. Klik salah satu foto untuk melihat detail atau langsung memesan desain tersebut.
+        </p>
+      </div>
+
+      <!-- Filter Buttons / Pills -->
+      <div class="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-12">
+        <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-stone-900 text-white shadow-md" data-category="all">
+          Semua Koleksi
+        </button>
+        <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-stone-700 border border-stone-200 hover:border-blush-400" data-category="minimalist">
+          Minimalist & Clean
+        </button>
+        <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-stone-700 border border-stone-200 hover:border-blush-400" data-category="cute">
+          Cute & Korean 3D
+        </button>
+        <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-stone-700 border border-stone-200 hover:border-blush-400" data-category="elegant">
+          Elegant Chrome & Velvet
+        </button>
+        <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-stone-700 border border-stone-200 hover:border-blush-400" data-category="wedding">
+          Bridal & Wedding
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Item 1: Minimalist Glazed Donut -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="minimalist"
+          data-title="Glazed Chrome Minimalist"
+          data-category-label="Minimalist & Clean"
+          data-desc="Sheer nude base dengan sentuhan pearl chrome shimmer yang memantulkan kilau bersih elegan."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" 
+              alt="Glazed Chrome Minimalist Nail Art" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <!-- Overlay on hover -->
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-blush-300 uppercase tracking-widest">Minimalist & Clean</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Glazed Chrome Sheer</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Teknik chrome glazed dengan pantulan mutiara yang halus.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Elegant Velvet Cat Eye -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="elegant"
+          data-title="Champagne Velvet Cat Eye"
+          data-category-label="Elegant Chrome & Velvet"
+          data-desc="Magnetik cat eye bertekstur beludru warna champagne gold yang mewah dan berdimensi tinggi."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80" 
+              alt="Champagne Velvet Cat Eye Nail Art" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-champagne-300 uppercase tracking-widest">Elegant & Velvet</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Champagne Velvet Cat Eye</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Gradasi kilau magnetik berputar yang berubah saat terkena cahaya.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Bridal Pearl Lace -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="wedding"
+          data-title="Pure Bridal Pearl Ombre"
+          data-category-label="Bridal & Wedding"
+          data-desc="Gradasi putih susu baby boomer dipadukan aksen mutiara mini asli dan kilau kristal halus untuk hari pernikahan."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80" 
+              alt="Bridal Pearl Nails Wedding" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-rose-200 uppercase tracking-widest">Bridal & Wedding</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Pure Bridal Pearl Ombre</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Desain abadi nan anggun pelengkap gaun pengantin Anda.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Cute Korean Blush Aura -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="cute"
+          data-title="Korean Blush Aura & 3D Hearts"
+          data-category-label="Cute & Korean 3D"
+          data-desc="Airbrush blush pink merona dari tengah kuku dengan hiasan kubah gel bening bentuk hati 3D ala Seoul."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" 
+              alt="Korean Blush Aura Nail Art" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-blush-300 uppercase tracking-widest">Cute & Korean 3D</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Blush Aura & 3D Dewdrop</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Efek rona pipi merona dengan ornamen gel 3D timbul.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Minimalist Modern French -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="minimalist"
+          data-title="Micro French Rose Gold Accent"
+          data-category-label="Minimalist & Clean"
+          data-desc="Garis ujung kuku ultra tipis (micro-french) berbalut chrome rose gold di atas kuku bentuk almond natural."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=800&q=80" 
+              alt="Micro French Nail Art" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-blush-300 uppercase tracking-widest">Minimalist & Clean</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Micro French Rose Gold</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Sangat rapi, bersih, dan cocok untuk profesional kantoran.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Elegant White Marble Gold Leaf -->
+        <div 
+          class="gallery-item gallery-card rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-nude-200 relative group cursor-pointer"
+          data-category="elegant"
+          data-title="Carrara Marble & 24K Gold Leaf"
+          data-category-label="Elegant Chrome & Velvet"
+          data-desc="Motif marmer putih Carrara cair dengan serpihan lembaran emas asli 24k untuk kesan mewah abadi."
+        >
+          <div class="aspect-square overflow-hidden bg-stone-100 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
+              alt="Marble Gold Leaf Nail Art" 
+              class="w-full h-full object-cover object-center" 
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="text-[11px] font-semibold text-champagne-300 uppercase tracking-widest">Elegant Luxury</span>
+              <h3 class="font-serif text-xl font-bold mt-0.5">Carrara Marble & Gold Leaf</h3>
+              <p class="text-xs text-stone-200 mt-1 line-clamp-2">Teknik blending marmer realistis khas nail artist senior.</p>
+              <div class="mt-4 flex items-center gap-2">
+                <button class="gallery-view-btn px-3.5 py-1.5 rounded-full bg-white text-stone-900 text-xs font-bold hover:bg-blush-100 transition-colors flex items-center gap-1.5">
+                  <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                  <span>Lihat Detail</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Instagram Showcase Banner -->
+      <div class="mt-16 text-center">
+        <a 
+          href="https://instagram.com" 
+          target="_blank" 
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-nude-300 text-stone-800 hover:text-blush-600 hover:border-blush-300 shadow-sm text-xs font-semibold tracking-wider uppercase transition-all"
+        >
+          <i data-lucide="instagram" class="w-4 h-4 text-blush-500"></i>
+          <span>Lihat Koleksi Desain Terbaru di Instagram @niwi.nails</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. TESTIMONIALS SECTION (ULASAN PELANGGAN SETIA)
+       ========================================================================= -->
+  <section id="testimonials" class="py-20 lg:py-28 bg-[#FAF5F0] border-t border-nude-200 relative overflow-hidden">
+    <!-- Subtle background blurs -->
+    <div class="absolute top-0 right-10 w-72 h-72 rounded-full bg-blush-200/50 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+          <span>ULASAN & TESTIMONI</span>
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso">
+          Cerita Manis Dari <span class="text-rosegold-gradient italic font-editorial">Klien Tercinta Kami</span>
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base font-light">
+          Kepuasan dan kenyamanan Anda adalah dedikasi utama kami. Berikut apa yang mereka rasakan setelah perawatan di studio Niwi Nails.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="rounded-3xl bg-white p-8 shadow-sm hover:shadow-md transition-shadow border border-nude-200 flex flex-col justify-between">
+          <div class="space-y-4">
+            <!-- Stars -->
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              &ldquo;Ini studio nail art paling bersih dan nyaman di Brandan Barat! Alasan utama saya langganan adalah kikir kuku dan buffer-nya benar-benar steril dan higienis. Pengerjaan Kak Niwi super teliti dan nail art celestial blue-nya cantik banget!&rdquo;
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-nude-100 flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=140&q=80" alt="Clarissa Hartono" class="w-11 h-11 rounded-full object-cover border-2 border-blush-200" />
+            <div>
+              <h3 class="text-sm font-bold text-espresso">Clarissa Hartono</h3>
+              <p class="text-[11px] text-stone-500">Korean Gel Polish &bull; Brandan Barat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 (Wedding Client) -->
+        <div class="rounded-3xl bg-white p-8 shadow-md hover:shadow-lg transition-shadow border-2 border-blush-300/70 flex flex-col justify-between relative">
+          <div class="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-blush-500 text-white text-[10px] font-bold uppercase tracking-wider">
+            Bridal Client
+          </div>
+
+          <div class="space-y-4">
+            <!-- Stars -->
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              &ldquo;Aku pesan paket Bridal Nail untuk hari pernikahanku bulan lalu. Hasilnya jauh melebihi ekspektasi! Kristal swarovski dan gradasi mutiaranya berkilau luar biasa di foto resepsi. Mbak terapisnya sabar banget dengerin request detailku sambil kasih rose tea hangat.&rdquo;
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-nude-100 flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=140&q=80" alt="Nadine Aurelia" class="w-11 h-11 rounded-full object-cover border-2 border-champagne-300" />
+            <div>
+              <h3 class="text-sm font-bold text-espresso">Nadine Aurelia, S.Ds</h3>
+              <p class="text-[11px] text-stone-500">Royal Bridal Package &bull; Bride</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="rounded-3xl bg-white p-8 shadow-sm hover:shadow-md transition-shadow border border-nude-200 flex flex-col justify-between">
+          <div class="space-y-4">
+            <!-- Stars -->
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+
+            <p class="text-stone-700 text-sm italic leading-relaxed">
+              &ldquo;Kuku asli aku sebelumnya tipis banget dan gampang patah karena sering pasang extension sembarangan. Di studio Niwi, teknik Russian Manicure & Soft Gel-nya bener-bener gentle, kuku asliku malah tumbuh sehat di bawah extension-nya. Worth every rupiah!&rdquo;
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-nude-100 flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=140&q=80" alt="Kezia Putri" class="w-11 h-11 rounded-full object-cover border-2 border-blush-200" />
+            <div>
+              <h3 class="text-sm font-bold text-espresso">Kezia Putri</h3>
+              <p class="text-[11px] text-stone-500">Nail Extension & Chrome &bull; Pangkalan Brandan</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. FAQ ACCORDION SECTION (PERTANYAAN UMUM)
+       ========================================================================= -->
+  <section id="faq" class="py-20 lg:py-28 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center space-y-3 mb-14">
+        <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+          <span>PERTANYAAN YANG SERING DIAJUKAN</span>
+          <span class="w-8 h-[1px] bg-blush-400"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso">
+          Hal yang Sering <span class="text-rosegold-gradient italic font-editorial">Ditanyakan Klien</span>
+        </h2>
+        <p class="text-stone-600 text-sm">
+          Semua hal yang perlu Anda ketahui sebelum berkunjung ke studio kami.
+        </p>
+      </div>
+
+      <!-- FAQ Accordion List -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-2xl bg-white border border-nude-200 overflow-hidden shadow-sm">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-stone-50/50 transition-colors">
+            <span class="font-serif text-base sm:text-lg font-bold text-espresso">
+              Berapa lama ketahanan kutek gel di Niwi Nails?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-blush-500 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm text-stone-600 leading-relaxed border-t border-nude-100 pt-3">
+            Dengan preparasi Russian Manicure kami dan formula gel premium Korea, ketahanan gel polish rata-rata bertahan <strong>4 hingga 5 minggu</strong> tanpa terkelupas, menguning, atau retak. Kami juga menyertakan <em>Garansi Retouch Gratis 7 Hari</em> jika terjadi kerusakan di luar faktor kesengajaan.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-2xl bg-white border border-nude-200 overflow-hidden shadow-sm">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-stone-50/50 transition-colors">
+            <span class="font-serif text-base sm:text-lg font-bold text-espresso">
+              Apakah kuku asli saya akan rusak atau menipis setelah di-extension?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-blush-500 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm text-stone-600 leading-relaxed border-t border-nude-100 pt-3 hidden">
+            Tidak sama sekali! Kami menggunakan sistem Soft Gel Tips dan Polygel mutakhir yang tidak membutuhkan pengikisan berlebih pada lempeng kuku asli Anda. Saat proses removal pun, kami menggunakan metode perendaman lembut atau e-file buffer tipis yang aman tanpa merusak lapisan keratin kuku.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-2xl bg-white border border-nude-200 overflow-hidden shadow-sm">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-stone-50/50 transition-colors">
+            <span class="font-serif text-base sm:text-lg font-bold text-espresso">
+              Apakah saya harus membuat janji (appointment) terlebih dahulu?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-blush-500 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm text-stone-600 leading-relaxed border-t border-nude-100 pt-3 hidden">
+            Untuk menjaga kenyamanan, ketenangan studio, dan pengerjaan yang tidak terburu-buru, kami <strong>sangat menyarankan untuk melakukan reservasi</strong> minimal 1-2 hari sebelumnya via WhatsApp. Namun kami tetap melayani <em>walk-in</em> jika slot terapis sedang kosong di hari tersebut.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-2xl bg-white border border-nude-200 overflow-hidden shadow-sm">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-stone-50/50 transition-colors">
+            <span class="font-serif text-base sm:text-lg font-bold text-espresso">
+              Bolehkah saya membawa foto referensi desain sendiri dari Pinterest?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-blush-500 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm text-stone-600 leading-relaxed border-t border-nude-100 pt-3 hidden">
+            Tentu saja! Hampir 80% klien kami membawa referensi foto dari Pinterest, Instagram, maupun Xiaohongshu (XHS). Anda bisa mengirimkan foto tersebut saat konsultasi via WhatsApp sebelum kedatangan agar tim kami dapat menyiapkan material atau warna yang tepat.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item rounded-2xl bg-white border border-nude-200 overflow-hidden shadow-sm">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-stone-50/50 transition-colors">
+            <span class="font-serif text-base sm:text-lg font-bold text-espresso">
+              Apakah produk yang digunakan halal & ramah untuk kuku sensitif?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-blush-500 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm text-stone-600 leading-relaxed border-t border-nude-100 pt-3 hidden">
+            Kami menggunakan kutek gel dengan sertifikasi 10-Free (bebas dari 10 zat kimia beracun seperti Toluene, DBP, Formaldehyde). Kami juga memiliki opsi breathable polish khusus yang dapat menyerap uap air, serta aman untuk ibu hamil dan menyusui.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. STUDIO LOCATION, CONTACT & OPERATIONAL HOURS
+       ========================================================================= -->
+  <section id="contact" class="py-20 lg:py-28 bg-[#FAF7F2] border-t border-nude-200 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <!-- Studio Info & Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-blush-500 uppercase">
+            <span class="w-8 h-[1px] bg-blush-400"></span>
+            <span>LOKASI & KONTAK</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso leading-tight">
+            Kunjungi Sanctuary Kuku Kami di <span class="text-rosegold-gradient italic font-editorial">Brandan Barat</span>.
+          </h2>
+
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Studio nail art estetik yang nyaman, tenang, dan ber-AC di Brandan Barat. Nikmati perawatan kuku eksklusif dengan higienitas terjamin dan suasana ramah.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-nude-300 text-blush-500 flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-stone-400">Alamat Studio</span>
+                <p class="text-sm font-semibold text-espresso mt-0.5">
+                  Brandan Barat, Kampung Baru No. 34
+                </p>
+                <p class="text-xs text-stone-500">Kec. Babalan / Pangkalan Brandan &bull; Lingkungan Tenang & Nyaman</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-nude-300 text-blush-500 flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-stone-400">Jam Operasional</span>
+                <p class="text-sm font-semibold text-espresso mt-0.5">
+                  Senin - Minggu: 10:00 - 20:00 WIB
+                </p>
+                <p class="text-xs text-stone-500">Last appointment slot: 18:30 WIB (Disarankan reservasi dulu)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-white border border-nude-300 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-stone-400">WhatsApp & Reservasi</span>
+                <p class="text-sm font-semibold text-espresso mt-0.5">
+                  0857-7202-8609 (+62 857-7202-8609)
+                </p>
+                <p class="text-xs text-stone-500">Fast response via WhatsApp konsultasi & jadwal</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="pt-4">
+            <span class="block text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">Ikuti Inspirasi Harian Kami</span>
+            <div class="flex items-center gap-3">
+              <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-nude-300 flex items-center justify-center text-stone-700 hover:text-blush-500 hover:border-blush-400 hover:scale-110 transition-all shadow-sm" aria-label="Instagram">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-nude-300 flex items-center justify-center text-stone-700 hover:text-blush-500 hover:border-blush-400 hover:scale-110 transition-all shadow-sm" aria-label="TikTok">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+              </a>
+              <a href="https://pinterest.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-nude-300 flex items-center justify-center text-stone-700 hover:text-blush-500 hover:border-blush-400 hover:scale-110 transition-all shadow-sm" aria-label="Pinterest">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.05-.98-.1-2.48.02-3.55l.72-3.07s-.18-.37-.18-.92c0-.86.5-1.5 1.13-1.5.53 0 .79.4.79.88 0 .54-.34 1.35-.52 2.1-.15.62.31 1.12.92 1.12 1.1 0 1.95-1.16 1.95-2.84 0-1.48-1.06-2.52-2.58-2.52-1.76 0-2.8 1.32-2.8 2.68 0 .53.2 1.1.46 1.41a.37.37 0 0 1 .08.35c-.09.37-.29 1.17-.33 1.33a.29.29 0 0 1-.41.2c-1.39-.64-2.26-2.65-2.26-4.27 0-3.47 2.52-6.66 7.28-6.66 3.82 0 6.79 2.73 6.79 6.37 0 3.8-2.39 6.86-5.71 6.86-1.12 0-2.17-.58-2.53-1.27l-.69 2.62c-.25.96-.92 2.16-1.37 2.89A12 12 0 1 0 12 0z"/></svg>
+              </a>
+              <a href="https://wa.me/6285772028609" target="_blank" class="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-300 flex items-center justify-center text-emerald-600 hover:bg-emerald-600 hover:text-white hover:scale-110 transition-all shadow-sm" aria-label="WhatsApp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Preview & Direct Route Card -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden bg-white border border-nude-300 shadow-lg p-3 relative">
+            
+            <!-- Map Preview Visual Frame -->
+            <div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden bg-stone-200">
+              <iframe 
+                src="https://maps.google.com/maps?q=Brandan+Barat+Kampung+Baru&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0 filter contrast-[1.02] brightness-95" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Peta Lokasi Studio Niwi Nails di Brandan Barat"
+              ></iframe>
+
+              <!-- Floating Map Card Pin -->
+              <a 
+                href="https://maps.app.goo.gl/V2kyvMG4GnGwmjfH6?g_st=iw" 
+                target="_blank" 
+                class="absolute top-4 left-4 glass-panel p-3.5 rounded-xl shadow-md border border-white max-w-xs hover:scale-105 transition-transform"
+                title="Klik untuk membuka di aplikasi Google Maps"
+              >
+                <div class="flex items-center gap-2">
+                  <div class="w-7 h-7 rounded-lg bg-blush-500 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-bold text-espresso">Niwi Nail Studio</span>
+                    <span class="block text-[10px] text-stone-500">Brandan Barat, Kampung Baru No. 34</span>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- Bottom Map Bar -->
+            <div class="p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-white">
+              <div class="text-xs text-stone-600">
+                <span class="font-semibold text-espresso">Lokasi:</span> Brandan Barat, Kampung Baru No. 34
+              </div>
+              <a 
+                href="https://maps.app.goo.gl/V2kyvMG4GnGwmjfH6?g_st=iw" 
+                target="_blank" 
+                class="px-5 py-2.5 rounded-full bg-espresso text-[#FAF7F2] text-xs font-semibold tracking-wider uppercase hover:bg-stone-800 transition-colors flex items-center gap-2 shrink-0 shadow-md"
+              >
+                <i data-lucide="navigation" class="w-3.5 h-3.5 text-champagne-300"></i>
+                <span>Buka di Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. FOOTER
+       ========================================================================= -->
+  <footer class="bg-stone-950 text-[#FAF7F2] pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Summary -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-blush-500/20 text-blush-300 flex items-center justify-center border border-blush-400/30">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-white">NIWI NAILS</span>
+          </div>
+          <p class="text-stone-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Studio nail art estetik & elegan oleh Niwi di Brandan Barat. Mengutamakan kesehatan kuku alami, produk gel vegan berstandar internasional, serta kenyamanan relaksasi terbaik untuk Anda.
+          </p>
+          <div class="pt-2 text-xs text-stone-500">
+            &copy; 2026 Niwi Nail Studio. All rights reserved.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold tracking-widest uppercase text-champagne-300 mb-4">Navigasi Cepat</h4>
+          <ul class="space-y-2.5 text-xs text-stone-400">
+            <li><a href="#about" class="hover:text-white transition-colors">Tentang Kami</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Menu Layanan & Harga</a></li>
+            <li><a href="#gallery" class="hover:text-white transition-colors">Koleksi Nail Art</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Ulasan Pelanggan</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ & Perawatan</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="text-xs font-bold tracking-widest uppercase text-champagne-300 mb-4">Layanan Utama</h4>
+          <ul class="space-y-2.5 text-xs text-stone-400">
+            <li><span class="hover:text-white cursor-pointer select-service-btn" data-service-name="Korean Gel Polish">Korean Gel Polish</span></li>
+            <li><span class="hover:text-white cursor-pointer select-service-btn" data-service-name="Nail Extension Pro">Nail Extension (Soft Gel)</span></li>
+            <li><span class="hover:text-white cursor-pointer select-service-btn" data-service-name="Custom Nail Art Design">Custom Nail Art (Chrome/3D)</span></li>
+            <li><span class="hover:text-white cursor-pointer select-service-btn" data-service-name="Luxury Russian Manicure">Russian Dry Manicure</span></li>
+            <li><span class="hover:text-white cursor-pointer select-service-btn" data-service-name="Royal Bridal Nail Package">Bridal Special Occasion</span></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Direct Book -->
+        <div>
+          <h4 class="text-xs font-bold tracking-widest uppercase text-champagne-300 mb-4">Reservasi & Jam</h4>
+          <div class="space-y-2 text-xs text-stone-400">
+            <p><strong class="text-white">Senin - Minggu</strong><br />10:00 - 20:00 WIB</p>
+            <p><strong class="text-white">Lokasi:</strong><br />Brandan Barat, Kampung Baru No. 34</p>
+            <div class="pt-2">
+              <a href="https://wa.me/6285772028609" target="_blank" class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WhatsApp: 0857-7202-8609</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <div>Designed with elegance, hygiene & mindfulness for modern women.</div>
+        <div class="flex items-center gap-4 text-stone-400">
+          <span>Kebijakan Privasi</span>
+          <span>&bull;</span>
+          <span>Syarat & Garansi 7 Hari</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. INTERACTIVE WHATSAPP BOOKING MODAL (FORM RESERVASI OTOMATIS)
+       ========================================================================= -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <!-- Modal Backdrop -->
+    <div id="booking-backdrop" class="fixed inset-0 bg-stone-950/70 backdrop-blur-sm transition-opacity"></div>
+
+    <!-- Modal Dialog Box -->
+    <div class="relative bg-[#FAF7F2] rounded-3xl shadow-2xl max-w-lg w-full p-6 sm:p-8 overflow-y-auto max-h-[90vh] z-10 border border-nude-200">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-nude-200">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-[11px] font-bold text-blush-500 tracking-wider uppercase">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>APPOINTMENT RESERVATION</span>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-espresso mt-0.5">Jadwalkan Perawatan Anda</h3>
+        </div>
+        <button id="booking-close" class="p-2 text-stone-400 hover:text-espresso rounded-full hover:bg-stone-100 transition-colors" aria-label="Tutup Form">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="booking-form" class="space-y-4 pt-4 text-xs">
+        
+        <div>
+          <label for="booking-name" class="block font-semibold text-stone-700 mb-1">Nama Lengkap *</label>
+          <input 
+            type="text" 
+            id="booking-name" 
+            required 
+            placeholder="Contoh: Jessica Aurelia"
+            class="w-full px-4 py-2.5 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900" 
+          />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="booking-phone" class="block font-semibold text-stone-700 mb-1">No. WhatsApp *</label>
+            <input 
+              type="tel" 
+              id="booking-phone" 
+              required 
+              placeholder="Contoh: 08123456789"
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900" 
+            />
+          </div>
+          <div>
+            <label for="booking-service" class="block font-semibold text-stone-700 mb-1">Layanan Utama *</label>
+            <select 
+              id="booking-service" 
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900"
+            >
+              <option value="Korean Gel Polish (Rp 149.000)">Korean Gel Polish (Rp 149k)</option>
+              <option value="Nail Extension Pro (Rp 285.000)">Nail Extension Soft Gel (Rp 285k)</option>
+              <option value="Custom Nail Art Design (Add-on)">Custom Nail Art Design (Add-on)</option>
+              <option value="Luxury Russian Manicure (Rp 120.000)">Luxury Russian Manicure (Rp 120k)</option>
+              <option value="Royal Bridal Nail Package (Rp 480.000)">Royal Bridal Nail Package (Rp 480k)</option>
+              <option value="Rose Petal Pedicure Spa (Rp 210.000)">Rose Petal Pedicure Spa (Rp 210k)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="booking-date" class="block font-semibold text-stone-700 mb-1">Tanggal Kunjungan *</label>
+            <input 
+              type="date" 
+              id="booking-date" 
+              required 
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900" 
+            />
+          </div>
+          <div>
+            <label for="booking-time" class="block font-semibold text-stone-700 mb-1">Pilihan Jam Slot *</label>
+            <select 
+              id="booking-time" 
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900"
+            >
+              <option value="10:00">10:00 WIB (Pagi)</option>
+              <option value="11:30">11:30 WIB</option>
+              <option value="13:30">13:30 WIB (Siang)</option>
+              <option value="15:00">15:00 WIB</option>
+              <option value="16:30">16:30 WIB (Sore)</option>
+              <option value="18:00">18:00 WIB</option>
+              <option value="18:30">18:30 WIB (Last Slot)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add-on Checkboxes -->
+        <div>
+          <label class="block font-semibold text-stone-700 mb-1.5">Layanan Tambahan (Add-on Opsional)</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 p-3 rounded-xl bg-white border border-nude-200">
+            <label class="flex items-center gap-2 cursor-pointer text-stone-600 hover:text-espresso">
+              <input type="checkbox" name="booking-addon" value="Removal Gel Lama" class="rounded text-blush-500 focus:ring-0" />
+              <span>Removal Gel Lama</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-stone-600 hover:text-espresso">
+              <input type="checkbox" name="booking-addon" value="Chrome / Cat Eye Glaze" class="rounded text-blush-500 focus:ring-0" />
+              <span>Chrome / Cat Eye</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-stone-600 hover:text-espresso">
+              <input type="checkbox" name="booking-addon" value="French 3D Tip" class="rounded text-blush-500 focus:ring-0" />
+              <span>French 3D / Line</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-stone-600 hover:text-espresso">
+              <input type="checkbox" name="booking-addon" value="Paraffin Spa Mask" class="rounded text-blush-500 focus:ring-0" />
+              <span>Paraffin Wax Mask</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="booking-notes" class="block font-semibold text-stone-700 mb-1">Catatan Khusus / Deskripsi Desain</label>
+          <textarea 
+            id="booking-notes" 
+            rows="2" 
+            placeholder="Contoh: Ingin desain chrome sheer seperti foto referensi Pinterest saya..."
+            class="w-full px-4 py-2 rounded-xl bg-white border border-nude-300 focus:outline-none focus:border-blush-500 focus:ring-1 focus:ring-blush-500 transition-all text-xs text-stone-900"
+          ></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button 
+            type="submit" 
+            class="w-full py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs tracking-wider uppercase transition-all shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Lanjutkan Reservasi ke WhatsApp</span>
+          </button>
+          <p class="text-[10px] text-center text-stone-500 mt-2">
+            Pesan terformat akan otomatis terbuka di aplikasi WhatsApp Anda.
+          </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. GALLERY LIGHTBOX MODAL (PREVIEW FOTO DETAIL)
+       ========================================================================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div id="lightbox-backdrop" class="fixed inset-0 bg-stone-950/80 backdrop-blur-md transition-opacity"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden z-10 border border-white/40">
+      
+      <button id="lightbox-close" class="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black transition-colors" aria-label="Tutup Lightbox">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="aspect-square bg-stone-100 overflow-hidden relative">
+        <img id="lightbox-img" src="" alt="Nail Art Showcase" class="w-full h-full object-cover object-center" />
+      </div>
+
+      <div class="p-6 space-y-3 bg-[#FAF7F2]">
+        <span id="lightbox-category" class="inline-block px-3 py-1 rounded-full bg-blush-100 text-blush-600 text-[10px] font-bold uppercase tracking-wider">
+          Koleksi Eksklusif
+        </span>
+        <h3 id="lightbox-title" class="font-serif text-2xl font-bold text-espresso">
+          Detail Desain Nail Art
+        </h3>
+        <p id="lightbox-desc" class="text-xs text-stone-600 leading-relaxed">
+          Desain elegan dengan sentuhan presisi artistik dan ketahanan hingga 4-5 minggu.
+        </p>
+
+        <div class="pt-3">
+          <a id="lightbox-book-btn" href="#" target="_blank" class="w-full py-3 rounded-full bg-espresso text-[#FAF7F2] font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 hover:bg-stone-800 transition-colors shadow-md">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>Pesan Desain Ini via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       14. FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE)
+       ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+    <!-- Tooltip banner on hover/idle -->
+    <a 
+      href="https://wa.me/6285772028609?text=Halo%20Niwi%2C%20saya%20ingin%20tanya%20jadwal%20tersedia%20dan%20konsultasi%20desain." 
+      target="_blank"
+      class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full glass-panel-gold shadow-lg text-xs font-semibold text-espresso hover:bg-white transition-all border border-champagne-300/40"
+    >
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+      <span>Konsultasi & Booking WA</span>
+    </a>
+
+    <!-- Pulse Icon Button -->
+    <a 
+      href="https://wa.me/6285772028609?text=Halo%20Niwi%2C%20saya%20ingin%20tanya%20jadwal%20tersedia%20dan%20konsultasi%20desain." 
+      target="_blank" 
+      class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl animate-whatsapp-pulse hover:scale-110 transition-transform relative group"
+      aria-label="Chat WhatsApp Niwi"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-rose-500 text-white text-[9px] font-bold flex items-center justify-center">1</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       15. BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button 
+    id="back-to-top" 
+    class="fixed bottom-6 left-6 z-40 w-11 h-11 rounded-full bg-white/90 border border-nude-300 text-stone-700 hover:text-espresso hover:bg-white shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-4 transition-all duration-300"
+    aria-label="Kembali ke atas"
+  >
+    <i data-lucide="arrow-up" class="w-4 h-4"></i>
+  </button>
+
+  <!-- Custom Scripts -->
+  <script src="js/script.js"></script>
+
+  <!-- Lucide Icons Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
+
